@@ -1,24 +1,28 @@
+# Chase the Pizza
+### @explicitHints true
 
-> Open this page at [https://tomatocube18.github.io/pxt-test-tutorial/](https://tomatocube18.github.io/pxt-test-tutorial/)
 
-## Use as Extension
+### ~button /#tutorial:/tutorials/chase-the-pizza
 
-This repository can be added as an **extension** in MakeCode.
+Try this tutorial!
 
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/tomatocube18/pxt-test-tutorial** and import
+### ~
 
-## Edit this project
+## Introduction @showdialog
 
-To edit this repository in MakeCode.
 
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/tomatocube18/pxt-test-tutorial** and click import
+Create a game where the goal is to eat as much pizza as you can 
+before the time runs out! 
 
-#### Metadata (used for search, rendering)
 
-* for PXT/arcade
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+
+```blockconfig.global
+let pizza: Sprite = null
+
+scene.setBackgroundColor(13)
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {})
+randint(0, scene.screenWidth())
+pizza.setPosition(randint(0, scene.screenWidth()), randint(0, scene.screenHeight()))
+info.startCountdown(3)
+
+```
