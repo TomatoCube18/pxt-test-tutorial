@@ -1,0 +1,24 @@
+{
+    "name": "test-tutorial-blob-master-readmemd",
+    "dependencies": {
+        "device": "*",
+        "pxt-test-tutorial": "github:tomatocube18/pxt-test-tutorial"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "2.0.56",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
